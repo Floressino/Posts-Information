@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Posts Information</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="new-post">
+        <h3>Добавить новый пост</h3>
+        <form action="" class="add-post-form">
+          <div class="form-group">
+            <label for="title">Заголовок</label>
+            <input type="text" placeholder="Заголовок" class="new-post__title">
+          </div>
+          <!-- /.form-group -->
+          <div class="form-group">
+            <label for="body">Текст поста</label>
+            <textarea placeholder="Текст" class="new-post__body"></textarea>
+          </div>
+          <!-- /.form-group -->
+          <button class="new-post__add">Создать</button>
+          <button class="post__update">Обновить</button>
+        </form>
+      </div>
+      <!-- /.new-post -->
+      <div class="form-group">
+        <input type="text" class="form-control" id="idPost" placeholder="Введите номер поста" oninput="changeHandler(this)">
+        <button class="button-search">Найти пост</button>
+      </div>
+      <!-- /.form-group -->
+    </div>
+    <!-- /.row -->
+    <div class="posts__list"></div>
+    <!-- /.posts__list -->
+    <button class="posts__get-posts">Загрузить посты</button>
+  </div>
+  <!-- /.container -->
+</body>
+<script src="js/script.js"></script>
+
+</html>

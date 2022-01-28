@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Posts Information</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="create-post">
+        <h3>Добавить новый пост</h3>
+        <form action="" class="add-post-form">
+          <div class="form-group">
+            <label for="title">Заголовок</label>
+            <input type="text" class="form-control" id="post-title" placeholder="Введите название поста">
+          </div>
+          <!-- /.form-group -->
+          <div class="form-group">
+            <label for="body">Текст поста</label>
+            <textarea class="form-control" id="post-body" placeholder="Введите текст поста"></textarea>
+          </div>
+          <!-- /.form-group -->
+          <button class="button-create">Создать</button>
+        </form>
+      </div>
+      <!-- /.create-post -->
+      <div class="form-group">
+        <input type="text" class="form-control" id="idPost" placeholder="Введите номер поста">
+        <button class="button-search">Найти пост</button>
+      </div>
+      <!-- /.form-group -->
+    </div>
+    <!-- /.row -->
+    <div class="posts-list" id="postsList"></div>
+    <!-- /.posts-list -->
+    <button class="button__load-posts">Загрузить посты</button>
+    <button class="button__load-more-posts" id="loadMore">Загрузить еще</button>
+  </div>
+  <!-- /.container -->
+</body>
+<script src="js/script.js"></script>
+
+</html>
